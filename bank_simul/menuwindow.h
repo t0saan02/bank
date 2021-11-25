@@ -1,19 +1,32 @@
 #ifndef MENUWINDOW_H
 #define MENUWINDOW_H
 
-#include <QWidget>
+#include <QMainWindow>
+#include"nostawindow.h"
+#include"saldowindow.h"
+
 
 namespace Ui {
 class MenuWindow;
 }
 
-class MenuWindow : public QWidget
+class MenuWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
     explicit MenuWindow(QWidget *parent = 0);
     ~MenuWindow();
+public slots:
+    void openNostaWindow();
+
+private:
+    NostaWindow *nstwindow;
+public slots:
+    void openSaldoWindow();
+
+private:
+    SaldoWindow *sldwindow;
 
 private slots:
     void on_btnsaldo_clicked();

@@ -16,9 +16,9 @@
   <widget class="QPushButton" name="btnsaldo">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>40</x>
      <y>40</y>
-     <width>91</width>
+     <width>121</width>
      <height>31</height>
     </rect>
    </property>
@@ -31,7 +31,7 @@
     <rect>
      <x>190</x>
      <y>40</y>
-     <width>91</width>
+     <width>121</width>
      <height>31</height>
     </rect>
    </property>
@@ -42,9 +42,9 @@
   <widget class="QPushButton" name="btntalletus">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>40</x>
      <y>90</y>
-     <width>91</width>
+     <width>121</width>
      <height>31</height>
     </rect>
    </property>
@@ -57,7 +57,7 @@
     <rect>
      <x>190</x>
      <y>90</y>
-     <width>91</width>
+     <width>121</width>
      <height>31</height>
     </rect>
    </property>
@@ -70,7 +70,7 @@
     <rect>
      <x>190</x>
      <y>140</y>
-     <width>91</width>
+     <width>121</width>
      <height>31</height>
     </rect>
    </property>
@@ -81,9 +81,9 @@
   <widget class="QPushButton" name="btntapahtumat">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>40</x>
      <y>140</y>
-     <width>91</width>
+     <width>121</width>
      <height>31</height>
     </rect>
    </property>

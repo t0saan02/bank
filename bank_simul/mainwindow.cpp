@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "menuwindow.h"
 #include <QMessageBox>
 
 
@@ -9,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    menWindow = new MenuWindow();
+    connect(ui->btnlogin, SIGNAL(click()), this, SLOT(openMenuWindow()));
 
 }
 
@@ -17,18 +16,20 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
+void MainWindow::openMenuWindow(){
+    menwindow = new MenuWindow();
+    menwindow->show();
+}
 void MainWindow::on_btnlogin_clicked()
 {
     QString login = ui->login->text();
     QString password = ui->pass->text();
     if(login=="admin" && password=="qwer")
 {
-     menWindow->show();
-     this->close;
+     openMenuWindow();
 
    }
     else{
-        QMessageBox::warning(this, "Vaara tunnus tai salasana");
+        QMessageBox::warning(this, "Tunnistauduinen", "Tunnus tai salasana on vaara!");
     }
 }
